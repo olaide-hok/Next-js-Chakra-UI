@@ -59,6 +59,7 @@ const theme = extendTheme(
           primary: (props: any) => ({
             rounded: 'none',
             ...brandRing,
+            color: mode('white', 'gray.800')(props),
             backgroundColor: mode('brand.500', 'brand.200')(props),
             _hover: {
               backgroundColor: mode('brand.600', 'brand.300')(props),
