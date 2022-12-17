@@ -25,6 +25,26 @@ const theme = extendTheme(
       heading: `Montserrat, ${base.fonts?.heading}`,
       body: `Inter, ${base.fonts?.body}`,
     },
+    components: {
+      Input: {
+        variants: {
+          filled: {
+            field: {
+              _focus: {
+                borderColor: 'brand.500',
+              },
+            },
+          },
+        },
+        sizes: {
+          md: {
+            field: {
+              borderRadius: 'none',
+            },
+          },
+        },
+      },
+    },
   },
   withDefaultColorScheme({
     colorScheme: 'brand',
